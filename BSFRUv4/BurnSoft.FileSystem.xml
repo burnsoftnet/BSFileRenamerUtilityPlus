@@ -1,0 +1,174 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+BurnSoft.FileSystem
+</name>
+</assembly>
+<members>
+<member name="T:BurnSoft.FileSystem.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:BurnSoft.FileSystem.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:BurnSoft.FileSystem.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:BurnSoft.FileSystem.FileIO.LogFile(System.String,System.String)">
+ <summary>
+ The Log File Sub is a quick and easy way to create a log file for your application.
+ </summary>
+ <param name="strPath"></param>
+ <param name="strMessage"></param>
+</member>
+<member name="M:BurnSoft.FileSystem.FileIO.DeleteFile(System.String)">
+ <summary>
+ The DeleteFile Sub will check to see if the file exists, if it does exist it will delete it.
+ </summary>
+ <param name="strPath"></param>
+</member>
+<member name="M:BurnSoft.FileSystem.FileIO.FileExists(System.String)">
+ <summary>
+ The AppendToFile Sub is like the LogFile Sub except it will not add the Date and Time Stamp to the File.
+ </summary>
+ <param name="sPath"></param>
+ <returns></returns>
+</member>
+<member name="M:BurnSoft.FileSystem.FileIO.MoveFile(System.String,System.String)">
+ <summary>
+ The MoveFile Sub will check to see if the File exists if the Source path, if it does exist then it will move it over to the destination path.
+ </summary>
+ <param name="strFrom"></param>
+ <param name="strTo"></param>
+</member>
+<member name="M:BurnSoft.FileSystem.FileIO.CopyFile(System.String,System.String)">
+ <summary>
+ The MoveFile Sub will check to see if the File exists if the Source path, if it does exist then it will copy it over to the destination path.
+ </summary>
+ <param name="strFrom"></param>
+ <param name="strTo"></param>
+</member>
+<member name="M:BurnSoft.FileSystem.FileIO.CreateDirectory(System.String)">
+ <summary>
+ The CreateDirectory Sub will check to see if the directory exists in the Target path that you provided. If it doesn’t exist, it will create it.
+ </summary>
+ <param name="strPath"></param>
+</member>
+<member name="M:BurnSoft.FileSystem.FileIO.DirectoryExists(System.String)">
+ <summary>
+ The DirectoryExists Function will check to see the directory that you provided exists.
+ </summary>
+ <param name="strPath"></param>
+ <returns></returns>
+</member>
+<member name="M:BurnSoft.FileSystem.FileIO.DeleteDirectory(System.String)">
+ <summary>
+ The DeleteDirectory Sub will check to see the directory that you provided exists. If it does exist, it will delete it.
+ </summary>
+ <param name="strPath"></param>
+</member>
+<member name="M:BurnSoft.FileSystem.FileIO.MoveDirectory(System.String,System.String)">
+ <summary>
+ The MoveDirectory Sub will check to see the directory that you provided exists in the Source, if it Does exist, it will move it to the targe path that you provided.
+ </summary>
+ <param name="strFrom"></param>
+ <param name="strTo"></param>
+</member>
+<member name="M:BurnSoft.FileSystem.FileIO.RenameFile(System.String,System.String)">
+ <summary>
+ The RenameFile Sub will rename the file that you provide in the source and rename it to that of the target
+ </summary>
+ <param name="strFrom"></param>
+ <param name="strTo"></param>
+</member>
+<member name="M:BurnSoft.FileSystem.FileIO.GetPathOfFile(System.String)">
+ <summary>
+ The GetPathOfFile Function will return the Full Directory of the File that you give it. Let’s say you Passed “C:\Temp\MyFile.log”, it will return “C:\Temp”
+ </summary>
+ <param name="strFile"></param>
+ <returns></returns>
+</member>
+<member name="M:BurnSoft.FileSystem.FileIO.GetExtOfFile(System.String)">
+ <summary>
+ The GetExtOfFile Function will return just the file extension of the file that you give it. Let’s say you Passed “C:\Temp\MyFile.log”, it will return “.Log”
+ </summary>
+ <param name="strFile"></param>
+ <returns></returns>
+</member>
+<member name="M:BurnSoft.FileSystem.FileIO.GetNameOfFile(System.String)">
+ <summary>
+ The GetNameOfFile function will return just the file name of the file that you give it. Let’s say you Passed “C:\Temp\MyFile.log”, it will return “MyFile.Log”
+ </summary>
+ <param name="strFile"></param>
+ <returns></returns>
+</member>
+<member name="M:BurnSoft.FileSystem.FileIO.FileHasExtension(System.String)">
+ <summary>
+ This will check and see if the file you provided has a file extension type.
+ </summary>
+ <param name="strFile"></param>
+ <returns></returns>
+</member>
+<member name="M:BurnSoft.FileSystem.FileIO.GetNameOfFileWOExt(System.String)">
+ <summary>
+ The GetNameOfFileWOExt function will return just the file name of the file that you give it. Let’s say you Passed “C:\Temp\MyFile.log”, it will return “MyFile”
+ </summary>
+ <param name="strFile"></param>
+ <returns></returns>
+</member>
+<member name="M:BurnSoft.FileSystem.FSInfo.GetShortPathName(System.String,BurnSoft.FileSystem.FSInfo.DirectoryPathlength)">
+ <summary>
+ Return the Shot 8-BIT DOS name of the path
+ </summary>
+ <param name="sPath"></param>
+ <param name="enumDirectoryPathlength"></param>
+ <returns></returns>
+</member>
+<member name="M:BurnSoft.FileSystem.FSInfo.GetLongPathName(System.String,BurnSoft.FileSystem.FSInfo.DirectoryPathlength)">
+ <summary>
+ Return the Long Path Name
+ </summary>
+ <param name="sPath"></param>
+ <param name="enumDirectoryPathLength"></param>
+ <returns></returns>
+</member>
+<member name="M:BurnSoft.FileSystem.FSInfo.CountAllDirectories(System.String,System.String@)">
+ <summary>
+ The FSInfo.CountAllDirectories function will return the count of all the sub folders in the selected target path.
+ </summary>
+ <param name="sPath"></param>
+ <param name="ErrMsg"></param>
+ <returns></returns>
+</member>
+<member name="M:BurnSoft.FileSystem.FSInfo.CountAllFiles(System.String,System.String@)">
+ <summary>
+ The FSInfo.CountAllFiles function will return the total number of files in the target directory/drive, this includes files in all sub directories including that what is in the root path.
+ </summary>
+ <param name="sPath"></param>
+ <param name="ErrMsg"></param>
+ <returns></returns>
+</member>
+<member name="M:BurnSoft.FileSystem.FSInfo.GetFreeSpace(System.String)">
+ <summary>
+ The FSInfo.GetFreeSpace will give you the free space of the selected drive
+ </summary>
+ <param name="Drive"></param>
+ <returns>Value in GigaBytes</returns>
+</member>
+<member name="M:BurnSoft.FileSystem.FSInfo.GetTotalSpace(System.String)">
+ <summary>
+ The FSInfo.GetTotalSpace will give you the Total space of the selected drive
+ </summary>
+ <param name="Drive"></param>
+ <returns>Value in GigaBytes</returns>
+</member>
+</members>
+</doc>

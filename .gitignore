@@ -1,0 +1,29 @@
+# osx noise
+.DS_Store
+profile
+
+# xcode noise
+build/*
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+*.xcworkspace
+xcuserdata
+
+# svn & cvs
+.svn
+CVS
+BSFRUv4/bin/Debug/ar/*.*
+BSFRUv4/bin/Debug/*.*
+BSFRUv4/obj/Debug/*.*
+BSFRUv4/obj/Debug/ar/*.*
+BSFRUv4/obj/Debug/TempPE/*.*
+BSFRUv4/obj/Release/ar/*.*
+BSFRUv4/obj/Release/*.*
+BSFRUv4/obj/Release/TempPE/*.*
+BSFRUv4/obj/*.*
+BSFRUv4/Thumbs.db
+BSFRUv4/images/Thumbs.db
