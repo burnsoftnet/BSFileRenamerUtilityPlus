@@ -3,6 +3,7 @@ Public Class ViewHistoryDetails
     Public ReportID As String
     Sub PopData()
         Me.Text = "History Details"
+        Me.Hist_ListTableAdapter.FillBy_RID(Me.FruData.Hist_List, ReportID)
     End Sub
     Private Sub ViewHistoryDetails_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Call PopData()

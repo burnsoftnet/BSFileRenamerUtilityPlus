@@ -67,7 +67,6 @@ Partial Class frmMain
         Me.ClearHistoryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelpToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.RegisterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PurchaseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -411,7 +410,7 @@ Partial Class frmMain
         '
         'HelpToolStripMenuItem
         '
-        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem, Me.HelpToolStripMenuItem1, Me.ToolStripSeparator3, Me.RegisterToolStripMenuItem, Me.PurchaseToolStripMenuItem, Me.ToolStripSeparator4, Me.SupportToolStripMenuItem, Me.BurnSoftHomeToolStripMenuItem})
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem, Me.ToolStripSeparator3, Me.RegisterToolStripMenuItem, Me.PurchaseToolStripMenuItem, Me.ToolStripSeparator4, Me.SupportToolStripMenuItem, Me.BurnSoftHomeToolStripMenuItem})
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
         resources.ApplyResources(Me.HelpToolStripMenuItem, "HelpToolStripMenuItem")
         '
@@ -419,11 +418,6 @@ Partial Class frmMain
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
         resources.ApplyResources(Me.AboutToolStripMenuItem, "AboutToolStripMenuItem")
-        '
-        'HelpToolStripMenuItem1
-        '
-        Me.HelpToolStripMenuItem1.Name = "HelpToolStripMenuItem1"
-        resources.ApplyResources(Me.HelpToolStripMenuItem1, "HelpToolStripMenuItem1")
         '
         'ToolStripSeparator3
         '
@@ -730,7 +724,6 @@ Partial Class frmMain
     Friend WithEvents ToolStripStatusLabel1 As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents ViewListToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ClearHistoryToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents HelpToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator3 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents RegisterToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PurchaseToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

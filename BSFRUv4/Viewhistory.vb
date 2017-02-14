@@ -11,8 +11,8 @@ Public Class Viewhistory
         NF.Show()
     End Sub
     Private Sub Viewhistory_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'FruData.Hist_List' table. You can move, or remove it, as needed.
-        Me.Hist_ListTableAdapter.Fill(Me.FruData.Hist_List)
+        'TODO: This line of code loads data into the 'FruData.Hist_Contents' table. You can move, or remove it, as needed.
+        Me.Hist_ContentsTableAdapter.Fill(Me.FruData.Hist_Contents)
         'TODO: This line of code loads data into the 'FruHist_Contents.Hist_Contents' table. You can move, or remove it, as needed.
         Call LoadData()
     End Sub

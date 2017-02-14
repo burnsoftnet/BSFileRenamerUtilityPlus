@@ -775,7 +775,7 @@ ErrHandler:
         myProcess.StartInfo.WindowStyle = ProcessWindowStyle.Maximized
         myProcess.Start()
     End Sub
-    Private Sub HelpToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HelpToolStripMenuItem1.Click
+    Private Sub HelpToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim myProcess As New Process
         myProcess.StartInfo.FileName = "filerenamer.chm"
         myProcess.StartInfo.WindowStyle = ProcessWindowStyle.Maximized

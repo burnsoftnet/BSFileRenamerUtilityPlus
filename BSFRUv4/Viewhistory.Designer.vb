@@ -1,9 +1,9 @@
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Viewhistory
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Viewhistory
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Viewhistory))
@@ -30,16 +30,15 @@ Partial Class Viewhistory
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.DeleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FruData = New BSFRUv4.fruData()
-        Me.HistListBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Hist_ListTableAdapter = New BSFRUv4.fruDataTableAdapters.Hist_ListTableAdapter()
+        Me.HistContentsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Hist_ContentsTableAdapter = New BSFRUv4.fruDataTableAdapters.Hist_ContentsTableAdapter()
         Me.IDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.RIDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.BeforeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AfterDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DirectoryDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContextMenuStrip1.SuspendLayout()
         CType(Me.FruData, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.HistListBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HistContentsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -48,9 +47,9 @@ Partial Class Viewhistory
         Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDDataGridViewTextBoxColumn, Me.RIDDataGridViewTextBoxColumn, Me.BeforeDataGridViewTextBoxColumn, Me.AfterDataGridViewTextBoxColumn})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDDataGridViewTextBoxColumn, Me.CDateDataGridViewTextBoxColumn, Me.DirectoryDataGridViewTextBoxColumn})
         Me.DataGridView1.ContextMenuStrip = Me.ContextMenuStrip1
-        Me.DataGridView1.DataSource = Me.HistListBindingSource
+        Me.DataGridView1.DataSource = Me.HistContentsBindingSource
         Me.DataGridView1.Location = New System.Drawing.Point(1, 12)
         Me.DataGridView1.MultiSelect = False
         Me.DataGridView1.Name = "DataGridView1"
@@ -86,38 +85,37 @@ Partial Class Viewhistory
         Me.FruData.DataSetName = "fruData"
         Me.FruData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'HistListBindingSource
+        'HistContentsBindingSource
         '
-        Me.HistListBindingSource.DataMember = "Hist_List"
-        Me.HistListBindingSource.DataSource = Me.FruData
+        Me.HistContentsBindingSource.DataMember = "Hist_Contents"
+        Me.HistContentsBindingSource.DataSource = Me.FruData
         '
-        'Hist_ListTableAdapter
+        'Hist_ContentsTableAdapter
         '
-        Me.Hist_ListTableAdapter.ClearBeforeFill = True
+        Me.Hist_ContentsTableAdapter.ClearBeforeFill = True
         '
         'IDDataGridViewTextBoxColumn
         '
         Me.IDDataGridViewTextBoxColumn.DataPropertyName = "ID"
         Me.IDDataGridViewTextBoxColumn.HeaderText = "ID"
         Me.IDDataGridViewTextBoxColumn.Name = "IDDataGridViewTextBoxColumn"
+        Me.IDDataGridViewTextBoxColumn.Visible = False
         '
-        'RIDDataGridViewTextBoxColumn
+        'CDateDataGridViewTextBoxColumn
         '
-        Me.RIDDataGridViewTextBoxColumn.DataPropertyName = "RID"
-        Me.RIDDataGridViewTextBoxColumn.HeaderText = "RID"
-        Me.RIDDataGridViewTextBoxColumn.Name = "RIDDataGridViewTextBoxColumn"
+        Me.CDateDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.CDateDataGridViewTextBoxColumn.DataPropertyName = "CDate"
+        Me.CDateDataGridViewTextBoxColumn.HeaderText = "Date & Time Created"
+        Me.CDateDataGridViewTextBoxColumn.Name = "CDateDataGridViewTextBoxColumn"
+        Me.CDateDataGridViewTextBoxColumn.Width = 119
         '
-        'BeforeDataGridViewTextBoxColumn
+        'DirectoryDataGridViewTextBoxColumn
         '
-        Me.BeforeDataGridViewTextBoxColumn.DataPropertyName = "Before"
-        Me.BeforeDataGridViewTextBoxColumn.HeaderText = "Before"
-        Me.BeforeDataGridViewTextBoxColumn.Name = "BeforeDataGridViewTextBoxColumn"
-        '
-        'AfterDataGridViewTextBoxColumn
-        '
-        Me.AfterDataGridViewTextBoxColumn.DataPropertyName = "After"
-        Me.AfterDataGridViewTextBoxColumn.HeaderText = "After"
-        Me.AfterDataGridViewTextBoxColumn.Name = "AfterDataGridViewTextBoxColumn"
+        Me.DirectoryDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.DirectoryDataGridViewTextBoxColumn.DataPropertyName = "Directory"
+        Me.DirectoryDataGridViewTextBoxColumn.HeaderText = "Root Directory"
+        Me.DirectoryDataGridViewTextBoxColumn.Name = "DirectoryDataGridViewTextBoxColumn"
+        Me.DirectoryDataGridViewTextBoxColumn.Width = 92
         '
         'Viewhistory
         '
@@ -130,11 +128,11 @@ Partial Class Viewhistory
         Me.MaximumSize = New System.Drawing.Size(589, 400)
         Me.Name = "Viewhistory"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Viewhistory"
+        Me.Text = "View History"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ContextMenuStrip1.ResumeLayout(False)
         CType(Me.FruData, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.HistListBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HistContentsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -144,10 +142,9 @@ Partial Class Viewhistory
     Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents ViewDetailsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents FruData As BSFRUv4.fruData
-    Friend WithEvents HistListBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents Hist_ListTableAdapter As BSFRUv4.fruDataTableAdapters.Hist_ListTableAdapter
-    Friend WithEvents IDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents RIDDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents BeforeDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AfterDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents HistContentsBindingSource As BindingSource
+    Friend WithEvents Hist_ContentsTableAdapter As fruDataTableAdapters.Hist_ContentsTableAdapter
+    Friend WithEvents IDDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents CDateDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents DirectoryDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
 End Class

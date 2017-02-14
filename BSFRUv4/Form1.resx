@@ -1108,13 +1108,13 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tpPicture.Size" type="System.Drawing.Size, System.Drawing">
-    <value>822, 94</value>
+    <value>818, 94</value>
   </data>
   <data name="tpPicture.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="tpPicture.Text" xml:space="preserve">
-    <value>Picture Resize</value>
+    <value>Picture Resize/Convert</value>
   </data>
   <data name="&gt;&gt;tpPicture.Name" xml:space="preserve">
     <value>tpPicture</value>
@@ -1139,7 +1139,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADm
-        CAAAAk1TRnQBSQFMAgEBAgEAASQBAAEkAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        CAAAAk1TRnQBSQFMAgEBAgEAATQBAAE0AQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAARADAAEBAQABCAYAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -1205,16 +1205,16 @@
     <value>0, 0</value>
   </metadata>
   <data name="SettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="SettingsToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Settings</value>
   </data>
   <data name="ToolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 6</value>
+    <value>149, 6</value>
   </data>
   <data name="ExitToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="ExitToolStripMenuItem1.Text" xml:space="preserve">
     <value>E&amp;xit</value>
@@ -1226,13 +1226,13 @@
     <value>&amp;File</value>
   </data>
   <data name="ViewListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="ViewListToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;View List</value>
   </data>
   <data name="ClearHistoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="ClearHistoryToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Clear History</value>
@@ -1248,12 +1248,6 @@
   </data>
   <data name="AboutToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;About</value>
-  </data>
-  <data name="HelpToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 22</value>
-  </data>
-  <data name="HelpToolStripMenuItem1.Text" xml:space="preserve">
-    <value>&amp;Help</value>
   </data>
   <data name="ToolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 6</value>
@@ -1914,7 +1908,7 @@
     <value>0</value>
   </data>
   <data name="GroupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 499</value>
+    <value>8, 495</value>
   </data>
   <data name="GroupBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>818, 163</value>
@@ -1947,7 +1941,7 @@
     <value>609, 17</value>
   </data>
   <data name="StatusStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 668</value>
+    <value>0, 657</value>
   </data>
   <data name="StatusStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>826, 22</value>
@@ -2016,7 +2010,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>826, 690</value>
+    <value>826, 679</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2161,12 +2155,6 @@
     <value>AboutToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;AboutToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HelpToolStripMenuItem1.Name" xml:space="preserve">
-    <value>HelpToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;HelpToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ToolStripSeparator3.Name" xml:space="preserve">
