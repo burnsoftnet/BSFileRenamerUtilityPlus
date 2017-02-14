@@ -27,3 +27,5 @@ BSFRUv4/obj/Release/TempPE/*.*
 BSFRUv4/obj/*.*
 BSFRUv4/Thumbs.db
 BSFRUv4/images/Thumbs.db
+BSFRUv4/bin/Release/ar/*.*
+BSFRUv4/bin/Release/*.*
