@@ -12,11 +12,12 @@
     <AssemblyName>BSFRUv4</AssemblyName>
     <MyType>WindowsForms</MyType>
     <ApplicationIcon>Office_OfficeSet_2.ico</ApplicationIcon>
-    <ManifestCertificateThumbprint>C5D5811AB12A365689378BF83C44AD032D533D70</ManifestCertificateThumbprint>
-    <ManifestKeyFile>BSFRUv4_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestCertificateThumbprint>7A8EC588D285191AC5FC7F2E2C6E784F539770C2</ManifestCertificateThumbprint>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
     <GenerateManifests>false</GenerateManifests>
     <TargetZone>LocalIntranet</TargetZone>
-    <SignManifests>false</SignManifests>
+    <SignManifests>true</SignManifests>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileUpgradeFlags>
